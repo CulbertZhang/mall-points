@@ -83,8 +83,9 @@ export async function getCart(userId: number) {
   })
 
   const selectedItems = list.filter(i => i.selected && i.isValid)
+  const totalQuantity = list.reduce((s, i) => s + i.quantity, 0)
   return {
-    totalCount: list.length,
+    totalCount: totalQuantity,
     selectedCount: selectedItems.length,
     totalPrice: selectedItems.reduce((s, i) => s + Number(i.price) * i.quantity, 0),
     selectedPrice: selectedItems.reduce((s, i) => s + Number(i.price) * i.quantity, 0),

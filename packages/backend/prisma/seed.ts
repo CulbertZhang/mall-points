@@ -58,36 +58,37 @@ async function main() {
 
   // Products - virtual memberships
   const products = [
-    { name: '爱奇艺黄金VIP月卡', subtitle: '热剧综艺抢先看 广告自动跳过', categoryId: cat11.id, price: 25, originalPrice: 30, stock: 9999, tags: ['hot'] },
-    { name: '爱奇艺黄金VIP年卡', subtitle: '连续包年更划算 全年畅看', categoryId: cat11.id, price: 218, originalPrice: 258, stock: 9999, tags: ['recommend'] },
-    { name: '优酷VIP会员月卡', subtitle: '海量影视 跳广告 1080P画质', categoryId: cat11.id, price: 25, originalPrice: 30, stock: 9999, tags: ['hot'] },
-    { name: '腾讯视频VIP月卡', subtitle: '超前点播 杜比画质 跳广告', categoryId: cat11.id, price: 25, originalPrice: 30, stock: 9999, tags: ['hot'] },
-    { name: '芒果TV全屏会员月卡', subtitle: '综艺独播 手机电视通用', categoryId: cat11.id, price: 22, originalPrice: 28, stock: 9999, tags: ['new'] },
-    { name: 'B站大会员月卡', subtitle: '番剧抢先 画质升级 专属表情', categoryId: cat12.id, price: 25, originalPrice: 25, stock: 9999, tags: ['new'] },
-    { name: 'QQ音乐豪华绿钻月卡', subtitle: '千万曲库 无损音质 付费歌曲免费听', categoryId: cat21.id, price: 15, originalPrice: 18, stock: 9999, tags: ['hot'] },
-    { name: '网易云音乐黑胶VIP月卡', subtitle: '黑胶专属音效 每日推荐提升', categoryId: cat21.id, price: 15, originalPrice: 18, stock: 9999, tags: ['hot'] },
-    { name: '酷狗音乐VIP月卡', subtitle: '无损下载 专属皮肤 去广告', categoryId: cat21.id, price: 12, originalPrice: 15, stock: 9999, tags: [] },
-    { name: 'WPS超级会员月卡', subtitle: 'PDF转换 云空间 AI写作 全功能', categoryId: cat31.id, price: 21, originalPrice: 30, stock: 9999, tags: ['recommend'] },
-    { name: '百度网盘超级会员月卡', subtitle: '极速下载 5T空间 在线解压', categoryId: cat32.id, price: 25, originalPrice: 30, stock: 9999, tags: ['hot'] },
-    { name: '阿里云盘扩容包200G/年', subtitle: '不限速下载 相册备份 多端同步', categoryId: cat32.id, price: 59, originalPrice: 69, stock: 9999, tags: [] },
-    { name: 'Keep会员月卡', subtitle: '专属课程 数据分析 运动计划定制', categoryId: cat41.id, price: 19, originalPrice: 25, stock: 9999, tags: ['new'] },
-    { name: '美团外卖月度神券包', subtitle: '每周无门槛红包 满减叠加使用', categoryId: cat42.id, price: 9.9, originalPrice: 15, stock: 9999, tags: ['hot', 'recommend'] },
-    { name: '滴滴出行月度打车券包', subtitle: '每周折扣券 快车专车通用', categoryId: cat42.id, price: 12.9, originalPrice: 20, stock: 9999, tags: [] },
+    { name: '爱奇艺黄金VIP月卡', subtitle: '热剧综艺抢先看 广告自动跳过', categoryId: cat11.id, price: 25, originalPrice: 30, stock: 9999, tags: ['hot'], logo: '/logos/iqiyi.svg' },
+    { name: '爱奇艺黄金VIP年卡', subtitle: '连续包年更划算 全年畅看', categoryId: cat11.id, price: 218, originalPrice: 258, stock: 9999, tags: ['recommend'], logo: '/logos/iqiyi.svg' },
+    { name: '优酷VIP会员月卡', subtitle: '海量影视 跳广告 1080P画质', categoryId: cat11.id, price: 25, originalPrice: 30, stock: 9999, tags: ['hot'], logo: '/logos/youku.svg' },
+    { name: '腾讯视频VIP月卡', subtitle: '超前点播 杜比画质 跳广告', categoryId: cat11.id, price: 25, originalPrice: 30, stock: 9999, tags: ['hot'], logo: '/logos/tencentvideo.svg' },
+    { name: '芒果TV全屏会员月卡', subtitle: '综艺独播 手机电视通用', categoryId: cat11.id, price: 22, originalPrice: 28, stock: 9999, tags: ['new'], logo: '/logos/mgtv.svg' },
+    { name: 'B站大会员月卡', subtitle: '番剧抢先 画质升级 专属表情', categoryId: cat12.id, price: 25, originalPrice: 25, stock: 9999, tags: ['new'], logo: '/logos/bilibili.svg' },
+    { name: 'QQ音乐豪华绿钻月卡', subtitle: '千万曲库 无损音质 付费歌曲免费听', categoryId: cat21.id, price: 15, originalPrice: 18, stock: 9999, tags: ['hot'], logo: '/logos/qqmusic.svg' },
+    { name: '网易云音乐黑胶VIP月卡', subtitle: '黑胶专属音效 每日推荐提升', categoryId: cat21.id, price: 15, originalPrice: 18, stock: 9999, tags: ['hot'], logo: '/logos/neteasemusic.svg' },
+    { name: '酷狗音乐VIP月卡', subtitle: '无损下载 专属皮肤 去广告', categoryId: cat21.id, price: 12, originalPrice: 15, stock: 9999, tags: [], logo: '/logos/kugou.svg' },
+    { name: 'WPS超级会员月卡', subtitle: 'PDF转换 云空间 AI写作 全功能', categoryId: cat31.id, price: 21, originalPrice: 30, stock: 9999, tags: ['recommend'], logo: '/logos/wps.svg' },
+    { name: '百度网盘超级会员月卡', subtitle: '极速下载 5T空间 在线解压', categoryId: cat32.id, price: 25, originalPrice: 30, stock: 9999, tags: ['hot'], logo: '/logos/baidupan.svg' },
+    { name: '阿里云盘扩容包200G/年', subtitle: '不限速下载 相册备份 多端同步', categoryId: cat32.id, price: 59, originalPrice: 69, stock: 9999, tags: [], logo: '/logos/alipan.svg' },
+    { name: 'Keep会员月卡', subtitle: '专属课程 数据分析 运动计划定制', categoryId: cat41.id, price: 19, originalPrice: 25, stock: 9999, tags: ['new'], logo: '/logos/keep.svg' },
+    { name: '美团外卖月度神券包', subtitle: '每周无门槛红包 满减叠加使用', categoryId: cat42.id, price: 9.9, originalPrice: 15, stock: 9999, tags: ['hot', 'recommend'], logo: '/logos/meituan.svg' },
+    { name: '滴滴出行月度打车券包', subtitle: '每周折扣券 快车专车通用', categoryId: cat42.id, price: 12.9, originalPrice: 20, stock: 9999, tags: [], logo: '/logos/didi.svg' },
   ]
 
-  for (const p of products) {
+  for (let idx = 0; idx < products.length; idx++) {
+    const p = products[idx]
     const product = await prisma.product.create({
       data: {
-        spuCode: `SPU${Date.now()}${Math.random().toString(36).slice(2, 5)}`,
+        spuCode: `SPU${100001 + idx}`,
         categoryId: p.categoryId,
         name: p.name,
         subtitle: p.subtitle,
-        mainImageUrl: `https://picsum.photos/400/400?random=${Math.floor(Math.random() * 10000)}`,
+        mainImageUrl: p.logo,
         detailHtml: `<div style="padding:16px"><h3>${p.name}</h3><p style="color:#666;margin-top:8px">${p.subtitle}</p><p style="margin-top:12px;color:#999">购买后自动发放至您的账户，虚拟商品一经兑换不支持退款。</p></div>`,
         minPrice: p.price,
         maxPrice: p.originalPrice,
         totalStock: p.stock,
-        salesCount: Math.floor(Math.random() * 20000) + 1000,
+        salesCount: 1000 + idx * 1300,
         onsaleStatus: 1,
         tags: p.tags,
         unit: '张',
@@ -120,9 +121,9 @@ async function main() {
   // Banners
   await prisma.banner.createMany({
     data: [
-      { title: '权益狂欢月', imageUrl: 'https://picsum.photos/750/340?random=101', linkType: 'url', linkValue: '/home', position: 'home', sortOrder: 1 },
-      { title: '视频会员5折起', imageUrl: 'https://picsum.photos/750/340?random=102', linkType: 'url', linkValue: '/categories', position: 'home', sortOrder: 2 },
-      { title: '新人专享 签到领积分', imageUrl: 'https://picsum.photos/750/340?random=103', linkType: 'url', linkValue: '/signin', position: 'home', sortOrder: 3 },
+      { title: '权益狂欢月', imageUrl: '/banners/banner1.svg', linkType: 'url', linkValue: '/home', position: 'home', sortOrder: 1 },
+      { title: '视频会员5折起', imageUrl: '/banners/banner2.svg', linkType: 'url', linkValue: '/categories', position: 'home', sortOrder: 2 },
+      { title: '新人专享 签到领积分', imageUrl: '/banners/banner3.svg', linkType: 'url', linkValue: '/signin', position: 'home', sortOrder: 3 },
     ],
   })
 

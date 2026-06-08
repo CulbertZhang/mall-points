@@ -35,6 +35,7 @@ export const useCartStore = defineStore('cart', () => {
   async function remove(id: number) {
     await removeCartItem(id)
     items.value = items.value.filter(i => i.cartItemId !== id)
+    totalCount.value = items.value.reduce((s, i) => s + i.quantity, 0)
   }
 
   function toggleSelect(cartItemId: number) {

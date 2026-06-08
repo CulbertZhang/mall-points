@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="750" height="340" viewBox="0 0 750 340">
+  <defs>
+    <linearGradient id="bg3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4facfe"/>
+      <stop offset="100%" style="stop-color:#00f2fe"/>
+    </linearGradient>
+  </defs>
+  <rect width="750" height="340" fill="url(#bg3)"/>
+  <circle cx="630" cy="100" r="100" fill="rgba(255,255,255,0.08)"/>
+  <circle cx="580" cy="280" r="70" fill="rgba(255,255,255,0.06)"/>
+  <circle cx="80" cy="50" r="40" fill="rgba(255,255,255,0.05)"/>
+  <text x="60" y="100" font-family="sans-serif" font-size="20" fill="rgba(255,255,255,0.8)">每日签到</text>
+  <text x="60" y="155" font-family="sans-serif" font-size="42" font-weight="bold" fill="#fff">签到领积分</text>
+  <text x="60" y="200" font-family="sans-serif" font-size="18" fill="rgba(255,255,255,0.85)">连续签到7天 积分翻倍奖励</text>
+  <text x="60" y="235" font-family="sans-serif" font-size="16" fill="rgba(255,255,255,0.7)">积分可兑换全场权益商品</text>
+  <rect x="60" y="260" width="140" height="40" rx="20" fill="#fff"/>
+  <text x="85" y="286" font-family="sans-serif" font-size="15" font-weight="bold" fill="#4facfe">去签到</text>
+  <text x="460" y="180" font-family="sans-serif" font-size="60" font-weight="bold" fill="rgba(255,255,255,0.12)">+100</text>
+  <text x="480" y="230" font-family="sans-serif" font-size="24" fill="rgba(255,255,255,0.15)">积分</text>
+</svg>

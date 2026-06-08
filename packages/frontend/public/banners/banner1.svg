@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="750" height="340" viewBox="0 0 750 340">
+  <defs>
+    <linearGradient id="bg1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#667eea"/>
+      <stop offset="100%" style="stop-color:#764ba2"/>
+    </linearGradient>
+  </defs>
+  <rect width="750" height="340" fill="url(#bg1)"/>
+  <circle cx="620" cy="80" r="120" fill="rgba(255,255,255,0.08)"/>
+  <circle cx="680" cy="260" r="80" fill="rgba(255,255,255,0.05)"/>
+  <circle cx="100" cy="300" r="60" fill="rgba(255,255,255,0.06)"/>
+  <text x="60" y="120" font-family="sans-serif" font-size="42" font-weight="bold" fill="#fff">权益狂欢月</text>
+  <text x="60" y="170" font-family="sans-serif" font-size="22" fill="rgba(255,255,255,0.9)">视频 · 音乐 · 工具 · 生活</text>
+  <text x="60" y="210" font-family="sans-serif" font-size="18" fill="rgba(255,255,255,0.7)">海量权益低至5折 积分翻倍</text>
+  <rect x="60" y="240" width="140" height="44" rx="22" fill="#fff"/>
+  <text x="95" y="268" font-family="sans-serif" font-size="16" font-weight="bold" fill="#764ba2">立即抢购</text>
+  <text x="500" y="160" font-family="sans-serif" font-size="72" fill="rgba(255,255,255,0.15)">VIP</text>
+</svg>

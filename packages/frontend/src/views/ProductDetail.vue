@@ -46,7 +46,9 @@
     <div class="action-bar" v-if="detail">
       <div class="action-icons">
         <div class="action-icon-item" @click="$router.push('/cart')">
-          <van-icon name="cart-o" size="22" />
+          <van-badge :content="cart.totalCount || ''" :show-zero="false">
+            <van-icon name="cart-o" size="22" />
+          </van-badge>
           <span>购物车</span>
         </div>
       </div>
@@ -63,13 +65,14 @@ import { ref, onMounted } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
 import { showToast } from 'vant'
 import { getProductDetail } from '../api/product'
-import { addToCart } from '../api/cart'
 import { useAuthStore } from '../stores/auth'
+import { useCartStore } from '../stores/cart'
 import type { ProductDetail, ProductSku } from '../types'
 
 const route = useRoute()
 const router = useRouter()
 const auth = useAuthStore()
+const cart = useCartStore()
 const detail = ref<ProductDetail | null>(null)
 const selectedSkuId = ref(0)
 const selectedSku = ref<ProductSku | null>(null)
@@ -93,7 +96,7 @@ async function onAddCart() {
   if (!auth.isLoggedIn) { showToast('请先登录'); return }
   if (!selectedSkuId.value) return
   try {
-    await addToCart(detail.value!.id, selectedSkuId.value, quantity.value)
+    await cart.add(detail.value!.id, selectedSkuId.value, quantity.value)
     showToast('已加入购物车')
   } catch {}
 }
