@@ -1,0 +1,15 @@
+{
+  "name": "mall-points",
+  "version": "1.0.0",
+  "private": true,
+  "description": "商城会员积分系统",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "dev:frontend": "npm -w packages/frontend run dev",
+    "dev:backend": "npm -w packages/backend run dev",
+    "build:frontend": "npm -w packages/frontend run build",
+    "build:backend": "npm -w packages/backend run build"
+  }
+}

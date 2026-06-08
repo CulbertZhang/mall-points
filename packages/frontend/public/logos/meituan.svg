@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="400" viewBox="0 0 400 400">
+  <defs>
+    <linearGradient id="bg-meituan" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFD000"/>
+      <stop offset="100%" style="stop-color:#e1b200"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="400" rx="64" fill="url(#bg-meituan)"/>
+  <text x="200" y="190" text-anchor="middle" font-family="-apple-system,BlinkMacSystemFont,sans-serif" font-size="72" font-weight="700" fill="#222" dominant-baseline="middle">美团</text>
+  <text x="200" y="260" text-anchor="middle" font-family="-apple-system,BlinkMacSystemFont,sans-serif" font-size="24" fill="#222" opacity="0.7">Meituan</text>
+</svg>

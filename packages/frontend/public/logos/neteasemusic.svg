@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="400" viewBox="0 0 400 400">
+  <defs>
+    <linearGradient id="bg-neteasemusic" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#C20C0C"/>
+      <stop offset="100%" style="stop-color:#a40000"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="400" rx="64" fill="url(#bg-neteasemusic)"/>
+  <text x="200" y="190" text-anchor="middle" font-family="-apple-system,BlinkMacSystemFont,sans-serif" font-size="72" font-weight="700" fill="#fff" dominant-baseline="middle">网易云</text>
+  <text x="200" y="260" text-anchor="middle" font-family="-apple-system,BlinkMacSystemFont,sans-serif" font-size="24" fill="#fff" opacity="0.7">NetEase Music</text>
+</svg>

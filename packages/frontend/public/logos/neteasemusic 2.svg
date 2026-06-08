@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="400" viewBox="0 0 400 400">
+  <rect width="400" height="400" rx="80" fill="#C20C0C"/>
+  <circle cx="200" cy="200" r="120" fill="none" stroke="#fff" stroke-width="16"/>
+  <circle cx="200" cy="200" r="50" fill="#fff"/>
+  <path d="M200 80 L200 200" stroke="#fff" stroke-width="14" stroke-linecap="round"/>
+  <text x="200" y="360" text-anchor="middle" font-family="Arial,sans-serif" font-size="32" font-weight="bold" fill="#fff">网易云音乐</text>
+</svg>
